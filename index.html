@@ -1,14 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <span id="player-1">1</span>
-    <span id="player-2">2</span>
-    <button id="submit" style="display: block;">go!</button>
+    <label class="label">
+        <span>Карта №1 может повторятся</span>
+        <input type="checkbox" id="can-be-same" checked>
+    </label>
+    <table class="table">
+        <th>
+            <tr class="tr tr-head">
+                <td class="td"></td>
+                <td class="td td-map">Номер карты</td>
+            </tr>
+        </th>
+        <tbody>
+            <tr class="tr">
+                <th class="td">Игрок 1</th>
+                <td id="player-1" class="td td-map">?</td>
+            </tr>
+            <tr class="tr">
+                <th class="td">Игрок 2</th>
+                <td id="player-2" class="td td-map">?</td>
+            </tr>
+            <tr class="tr">
+                <th class="td">Игрок 3</th>
+                <td id="player-3" class="td td-map">?</td>
+            </tr>
+            <tr class="tr">
+                <th class="td">Игрок 4</th>
+                <td id="player-4" class="td td-map">?</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- <span id="player-1">Игрок 1</span>
+    <span id="player-2">Игрок 2</span>
+    <span id="player-3">Игрок 3</span>
+    <span id="player-4">Игрок 4</span> -->
+    <button id="submit"
+            class="submit">Поехали</button>
     <script src="main.js"></script>
 </body>
+
 </html>
